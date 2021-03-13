@@ -1,4 +1,4 @@
-module.exports = (phase) => {
+module.exports = () => {
   return {
     env: {
       mongodb_username: "ManosFr",

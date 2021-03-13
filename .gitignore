@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 next.config.js
+dummy-data.js
 
 # testing
 /coverage
