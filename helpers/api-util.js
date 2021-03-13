@@ -5,13 +5,12 @@ export async function getAllEvents() {
   const data = await response.json();
   //epistrefei ta data san object p ta thelw array
   const events = [];
-  console.log(data);
+
   for (const key in data) {
     events.push({
       id: key,
       ...data[key],
     });
-    console.log(events);
   }
   return events;
 }

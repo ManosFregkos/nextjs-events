@@ -12,7 +12,6 @@ export default function EventItem(props) {
     month: "long",
     year: "numeric",
   });
-  console.log(props);
   //gia kathe , sto address kanei line break
   const formattedAddress = location.replace(", ", "\n");
   const exploreLink = `/events/${id}`;
