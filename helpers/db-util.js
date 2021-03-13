@@ -1,9 +1,10 @@
 import { MongoClient } from "mongodb";
 
 export async function connectDatabase() {
-  const client = await MongoClient.connect(
-    `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${mongodb_cluster}.j1iir.mongodb.net/events?retryWrites=true&w=majority`
-  );
+  const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_cluster}.j1iir.mongodb.net/my-blog?retryWrites=true&w=majority`;
+
+  const client = await MongoClient.connect(connectionString);
+  console.log("sindethike");
   return client;
 }
 
